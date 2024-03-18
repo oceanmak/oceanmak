@@ -1,0 +1,726 @@
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-5%, -400%);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#nav1 {
+  height: 10vh;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-nav li a {
+  color: rgb(0, 0, 0);
+}
+.nav-item > a:hover {
+  color: #2a365f;
+}
+.home_content {
+  line-height: 1.9;
+}
+header {
+  height: 90vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.75),
+      rgba(8, 83, 156, 0.75)
+    ),
+    url("../assests/landing.jpeg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #2a365f;
+}
+
+#down {
+  position: absolute;
+  top: 70vh;
+  size: 40px;
+  /* padding: 20px; */
+  font-size: 2.5em;
+  color: white;
+}
+
+#down:hover {
+  cursor: pointer;
+  /* background-color: #eee; */
+  color: #2a365f;
+  opacity: 0.8;
+}
+
+/*code to change background color*/
+.navbar-nav > .active > a {
+  /* background-color: #C0C0C0; */
+  color: #2a365f;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  color: white;
+}
+
+.main {
+  color: #080808;
+  margin: 20px;
+  padding: 3.5%;
+  text-align: justify;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  /* position:; */
+  /* z-index: 1; */
+  /* top: 0; */
+  /* overflow-x: hidden; */
+  /* padding-top: 20px; */
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #c0c0c0;
+  align-items: center;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: beige;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assests/landing.jpeg");
+  /* Set a specific height */
+  height: 30%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-about-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assests/about.jpg");
+  /* Set a specific height */
+  height: 30%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  color: white;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background: #638aaa;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #6e94ab;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+.marquee {
+  width: 100%;
+  border: none;
+  background-color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.marquee span {
+  display: inline-block;
+  color: white;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* About Section 
+============== */
+
+.about-area .section-title {
+  margin-bottom: 30px;
+}
+
+.info-content-area .section-title h2 {
+  position: relative;
+  padding-left: 35px;
+}
+
+.info-content-area .section-title h2:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 5px solid#2a365f;
+}
+
+.info-content-area p.highlight {
+  position: relative;
+  padding-left: 35px;
+  margin: 20px 0;
+}
+
+.info-content-area p.highlight:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  left: 0;
+  background: #2a365f;
+}
+
+.founded {
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 15px;
+}
+
+.founded img {
+  border-radius: 5px;
+}
+
+.founded-text p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #1a3759;
+  font-weight: 500;
+  padding: 25px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.info-content-area .main-btn {
+  background: transparent;
+  color: #2a365f;
+  border: 2px solid;
+  margin: 40px 0;
+}
+
+.info-content-area .main-btn:hover {
+  background: #2a365f;
+  color: #fff;
+  border-color: #2a365f;
+}
+
+.info-img img {
+  border-radius: 5px;
+}
+
+/* Footer */
+.contact-us-areas {
+  /* background-image: url(../img/contact-bg-1.jpg); */
+  background-size: cover;
+  /* height: 1100px; */
+  /* position: relative;
+	z-index: 1; */
+}
+.contact-us-area {
+  /* background-image: url(../img/contact-bg-1.jpg); */
+  background-size: cover;
+  /* height: 415px;
+	position: relative;
+	z-index: 1; */
+}
+
+.contact-us-wrapper {
+  background: #fff;
+  /* position: relative; */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-inner {
+  text-align: center;
+  /* padding: 10px 30px; */
+  border-right: 1px solid #eee;
+}
+
+.contact-us-inner:nth-last-child(4) {
+  border-right: none;
+}
+
+.contact-us-inner a {
+  /* text-transform: uppercase; */
+  color: #2a365f;
+  font-size: 17px;
+  font-weight: 500;
+  /* margin: 20px 0 10px; */
+}
+
+#contact-us .info-i {
+  position: relative;
+  z-index: 1;
+}
+
+#contact-us .info-i i:before {
+  font-size: 50px;
+  color: #2a365f;
+}
+
+#contact-us .contact-form .main-btn {
+  margin-top: 30px;
+}
+
+/* .contact-section {
+	background-image: url(../img/contact-bg-2.html);
+} */
+
+.contact-section .section-title h2 {
+  color: #fff;
+}
+
+.contact-form .main-btn {
+  border-radius: 0;
+  border: none;
+  /* margin: 40px 0; */
+}
+
+.contact-info i {
+  color: #2a365f;
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+/* about */
+#about {
+  background-image: url(../assests/about.jpg);
+  display: flex;
+  background-size: cover;
+  filter: blur(5px);	
+  padding:7px;
+  height: 90vh;
+}
+
+#about-content {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  /* font-weight: bold; */
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#about-content p {
+	font-size: medium;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.9;
+}
+
+/* hseq*/
+#hseq {
+  background-image: url(../assests/carousel.jpeg);
+  display: flex;
+  background-size: cover;
+  filter: blur(3px);	
+  padding:3px;
+  height: 90vh;
+}
+
+#hseq-content {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  /* font-weight: bold; */
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#hseq-content p {
+	font-size: small;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.3;
+}
+
+/* careers */
+#career {
+  background-image: url(../assests/commercial.jpeg);
+  display: flex;
+  background-size: cover;
+  filter: blur(5px);	
+  padding:7px;
+  height: 90vh;
+}
+
+#career-content {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  /* font-weight: bold; */
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#career-content p {
+	font-size: small;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.3;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: dodgerblue;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* hseq */
+#hseq {
+  background-image: url(../assests/about.jpg);
+  display: flex;
+  background-size: cover;
+  filter: blur(5px);	
+  height: 100vh;
+}
+
+#hseq-content {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#hseq-content p{
+  font-size:medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  line-height: 1.9;
+}
+
+.hseq_items{
+font-weight: bold;
+font-size:medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  line-height: 1.9;
+}
