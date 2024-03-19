@@ -518,10 +518,10 @@ footer a{
 
 /* about */
 #about {
-  background-image: url(../assests/about.jpg);
+  background-image: url(../assests/search.jpeg);
   display: flex;
   background-size: cover;
-  filter: blur(5px);	
+  filter: blur(3px);	
   padding:7px;
   height: 90vh;
 }
@@ -532,7 +532,7 @@ footer a{
   color: white;
   /* font-weight: bold; */
   /* border: 3px solid #f1f1f1; */
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
