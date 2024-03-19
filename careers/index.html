@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="OceanMak" />
-    <title>OceanMak</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="../css/style.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="OceanMak" />
+  <link rel="icon" type="image/x-icon" href="/assests/icon.png" />
+  <title>OceanMak</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- <link href="../css/style.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+  <style>
+    /* Style for the section with blurred background */
+    .blurred {
+      position: relative;
+      /* height: calc(100vh - 60px); Subtract navbar height from viewport height */
+      /* overflow-y: auto; */
+      /* Add vertical scrollbar if content overflows */
+      /* margin-top: 60px; Add separation between navbar and container */
+    }
+
+    .blurred::before {
+      content: "";
+      background-image: url('../assests/commercial.jpeg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(10px);
+      /* Adjust blur intensity as needed */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
 
   <body>
     <!-- Navbar -->
@@ -143,80 +163,158 @@
       </div>
     </nav>
 
-    <div id="career"></div>
-        <div id="career-content">
-            <p>
-            <h3>Careers</h3>
-                <h5>Join Our Team of Diving Professionals</h5>
-  At Oceanmak,we specialize in providing exceptional commercial diving services to a wide range of industries. Our success is built upon the expertise and dedication of our team members who are passionate about delivering excellence in underwater operations. 
-  If you're looking for an exciting career in commercial diving, consider joining our dynamic team. Explore the opportunities below and dive into a rewarding career with us.
-</br><br><h6>Why Choose OceanmakIndustry Leader:</h6></br><br> Join a company that is recognized as a leader in the commercial diving industry. We pride ourselves on delivering high-quality services that exceed our clients' expectations.
-</br><br>Safety First: Safety is our top priority. We provide comprehensive training and adhere to strict safety protocols to ensure the well-being of our team members on every dive.
-  </br><br>Cutting-Edge Technology: Work with state-of-the-art equipment and technology, allowing you to perform your job efficiently and effectively in various underwater environments.
-</br><br>Diverse Projects: From offshore oil rigs to underwater construction, our team tackles a diverse range of projects, providing you with opportunities to expand your skills and experience.
-  Professional Development: We support our team members' professional growth through ongoing training and development programs, allowing you to advance your career within the company.
-  Career Opportunities
-</br><br>Commercial Diver: Dive into a career where no two days are the same. As a commercial diver, you'll perform underwater inspections, repairs, and construction tasks with precision and expertise.
-</br><br>Dive Supervisor: Lead dive teams and oversee project operations to ensure safety, quality, and efficiency. As a dive supervisor, you'll play a crucial role in managing complex underwater projects.
-</br><br>ROV Operator: Operate remotely operated vehicles (ROVs) to perform detailed inspections and tasks in underwater environments. Join our team of ROV operators and utilize cutting-edge technology to explore the depths.
-</br><br>Dive Technician: Maintain and repair diving equipment to ensure optimal performance and safety standards. As a dive technician, you'll play a vital role in supporting our diving operations.
-</br><br><h5>Join Our Team Today!</h5>
-</br><br>If you're passionate about the underwater world and thrive in challenging environments, we want to hear from you. Take the plunge and explore the exciting career opportunities at Oceanmak Join our team of dedicated professionals and embark on a rewarding journey beneath the waves. Apply now and dive into your future with us.
-<h5>E-mail Address</h5>
-<p> <br>support@oceanmak.com</p>
-<a href="mailto:support@oceanmak.com">Mail Us</a> 
-</p>
-        </div> 
- <!-- Footer -->
- <footer class="footer-area blue-bg" style="margin: auto;">
-  <div id="contact">
-    <div id="contact-us" class="contact-us-area section-padding">
-      <div class="container">
-        <div class="contact-us-wrapper">
-          <div class="row no-gutters" style="margin-top: 70px;">
-            <!-- location -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="contact-us-inner">
-                <div class="info-i"><span>
-                  <i class="fas fa-map-marker-alt icon-sm"></i>
-                  </span></div>
-                <h5>Location</h5>
-                <p>Ajman Karama Nakheel<br>Near old souqe
-                </p>
-                <a href="https://maps.app.goo.gl/XAt3FDP6JHrjMisp8"
-                  target="__blank">Find
-                  us on map </a>
-                  
-              </div>
-            </div>
-            <!-- Phone number -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="contact-us-inner">
-                <i class="bi bi-telephone icon-sm"></i>
-                <div class="info-i"><span>
-                  <i class="fas fa-phone"></i>
-                  </span></div>
-                <h5>Phone Number</h5>
-                <p> <br>+971 525401615</p>
-                <a href="tel:525401615">Call Now</a>
-              </div>
-            </div>
-            <!-- email -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="contact-us-inner">
-                <div class="info-i"><span>
-                  <i class="fas fa-envelope icon-sm"></i></span></div>
-                <h5>E-mail Address</h5>
-                <p> <br>support@oceanmak.com</p>
-                <a href="mailto:support@oceanmak.com">mail us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    /* Style for the container in the center */
+    .careercon {
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .careercon h3 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color:#2a365f;
+    }
+    .careercon p {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg" id="nav1">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../assests/logo.png" alt="logo" width="100%" height="50px" />
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-us/">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Commercial Diving
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="../commercial-diving/">Underwater inspections</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../commercial-diving/">Civil Engineering & Construction
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../commercial-diving/">Search and recovery</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../commercial-diving/">Salvage</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../commercial-diving/">Swimming pool maintenance</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Marine Service
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Silt removal and UW airlifting</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Underwater Photography and Videography</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Underwater Welding and Cutting</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Underwater Demolition</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Marine Archaeology</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Marine Biology and Environmental Monitoring
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Construction and Installation</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Installation of beach buoys and jelly fish nets</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Installation of geotextile/quay wall </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../hseq/">HSEQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../careers/">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/">Contact</a>
+        </li>
+      </ul>
     </div>
-  </div>
-</footer>
-  
-   </body>
+  </nav>
+
+  <!-- Section with blurred background -->
+  <section class="blurred">
+    <!-- Container in the center -->
+    <div class="careercon">
+      <h3>Careers</h3>
+      <h4>Join Our Team of Diving Professionals</h4 >
+        <h6 style="line-height: 1.5;">
+      At Oceanmak,we specialize in providing exceptional commercial diving services to a wide range of industries. Our
+      success is built upon the expertise and dedication of our team members who are passionate about delivering
+      excellence in underwater operations.
+      If you're looking for an exciting career in commercial diving, consider joining our dynamic team. Explore the
+      opportunities below and dive into a rewarding career with us.
+    </h6>
+      </br><br>
+      <h4>Why Choose OceanmakIndustry Leader</h4>
+      <h6> Join a company that is recognized as a leader in the
+      commercial diving industry. We pride ourselves on delivering high-quality services that exceed our clients'
+      expectations.</h6>
+    <br>Safety First: Safety is our top priority. We provide comprehensive training and adhere to strict safety
+      protocols to ensure the well-being of our team members on every dive.
+      <br>
+      Cutting-Edge Technology: Work with state-of-the-art equipment and technology, allowing you to perform
+        your job efficiently and effectively in various underwater environments.<br>
+        Diverse Projects: From offshore oil rigs to underwater construction, our team tackles a diverse range of
+          projects, providing you with opportunities to expand your skills and experience.<br>
+          Professional Development: We support our team members' professional growth through ongoing training and
+          development programs, allowing you to advance your career within the company.<br>     </br><br>
+     
+     <h4>Career Opportunities</h4>
+      </br>Commercial Diver: Dive into a career where no two days are the same. As a commercial diver, you'll
+      perform underwater inspections, repairs, and construction tasks with precision and expertise.
+      </br>Dive Supervisor: Lead dive teams and oversee project operations to ensure safety, quality, and
+      efficiency. As a dive supervisor, you'll play a crucial role in managing complex underwater projects.
+      </br>ROV Operator: Operate remotely operated vehicles (ROVs) to perform detailed inspections and tasks in
+      underwater environments. Join our team of ROV operators and utilize cutting-edge technology to explore the depths.
+      </br>Dive Technician: Maintain and repair diving equipment to ensure optimal performance and safety standards.
+      As a dive technician, you'll play a vital role in supporting our diving operations.
+      </br><br>
+      <h4>Join Our Team Today!</h4>
+      <br>If you're passionate about the underwater world and thrive in challenging environments, we want to hear
+      from you. Take the plunge and explore the exciting career opportunities at Oceanmak Join our team of dedicated
+      professionals and embark on a rewarding journey beneath the waves. Apply now and dive into your future with us.
+
+      <br><br>
+      <h5>E-mail Address  :  
+      <a href="mailto:support@oceanmak.com">support@oceanmak.com</a>
+</h5> </div>
+  </section>
+
+</body>
+
 </html>
