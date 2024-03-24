@@ -698,14 +698,4 @@ font-size:medium;
 .container {
   padding: 0 20px; /* Adjust the left and right padding as needed */
 }
-@media (max-width: 767.98px) {
-  .main_heading{
-    font-size:large;
-    padding: auto;
-    text-align: center;
-  }
-  #about-content {
-        width: 90%; /* Adjust width for smaller screens */
-        padding: 15px; /* Adjust padding for smaller screens */
-    }
-}
+
