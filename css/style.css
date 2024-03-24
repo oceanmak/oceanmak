@@ -9,16 +9,19 @@ body {
   font-family: sans-serif;
 }
 
-#nav1 {
+/* #nav1 {
   height: 10vh;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+} */
+.nav-item{
+  color: black;
 }
-
 .navbar-nav li a {
   color: rgb(0, 0, 0);
-}
+} 
 .nav-item > a:hover {
+  font-weight: bolder;
   color: #2a365f;
 }
 .home_content {
@@ -41,32 +44,32 @@ header {
   color: #2a365f;
 }
 
-#down {
+/* #down {
   position: absolute;
   top: 70vh;
   size: 40px;
-  /* padding: 20px; */
+   padding: 20px;
   font-size: 2.5em;
   color: white;
-}
+} */
 
-#down:hover {
+/* #down:hover {
   cursor: pointer;
-  /* background-color: #eee; */
+  /* background-color: #eee; 
   color: #2a365f;
   opacity: 0.8;
-}
+} */
 
 /*code to change background color*/
-.navbar-nav > .active > a {
-  /* background-color: #C0C0C0; */
+/* .navbar-nav > .active > a {
+  /* background-color: #C0C0C0; 
   color: #2a365f;
-}
+} */
 
-.dropdown-menu {
+/* .dropdown-menu {
   background-color: #ffffff;
   color: white;
-}
+} */
 
 .main {
   color: #080808;
@@ -695,5 +698,4 @@ font-size:medium;
 .container {
   padding: 0 20px; /* Adjust the left and right padding as needed */
 }
-
 
