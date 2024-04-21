@@ -358,7 +358,7 @@ footer a{
 .marquee span {
   display: inline-block;
   color: white;
-  animation: marquee 20s linear infinite;
+  animation: marquee 8s linear infinite;
 }
 
 @keyframes marquee {
