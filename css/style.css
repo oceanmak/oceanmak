@@ -1,3 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --brand-color: #2a365f;
+  --brand-color-light: #1577A0;
+  --brand-accent: #17BABE;
+}
+
+* {
+  font-family: Open Sans;
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -9,84 +23,13 @@ body {
   font-family: sans-serif;
 }
 
-/* #nav1 {
-  height: 10vh;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-} */
-.nav-item{
-  color: black;
-}
-.navbar-nav li a {
-  color: rgb(0, 0, 0);
-} 
-.nav-item > a:hover {
-  font-weight: bolder;
-  color: #2a365f;
-}
 .home_content {
   line-height: 1.9;
-}
-header {
-  height: 90vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.75),
-      rgba(8, 83, 156, 0.75)
-    ),
-    url("../assests/landing.jpeg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-size: cover;
-  justify-content: center;
-  margin-bottom: 30px;
-  color: #2a365f;
-}
-
-/* #down {
-  position: absolute;
-  top: 70vh;
-  size: 40px;
-   padding: 20px;
-  font-size: 2.5em;
-  color: white;
-} */
-
-/* #down:hover {
-  cursor: pointer;
-  /* background-color: #eee; 
-  color: #2a365f;
-  opacity: 0.8;
-} */
-
-/*code to change background color*/
-/* .navbar-nav > .active > a {
-  /* background-color: #C0C0C0; 
-  color: #2a365f;
-} */
-
-/* .dropdown-menu {
-  background-color: #ffffff;
-  color: white;
-} */
-
-.main {
-  color: #080808;
-  margin: 20px;
-  padding: 3.5%;
-  text-align: justify;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .split {
   height: 50%;
   width: 50%;
-  /* position:; */
-  /* z-index: 1; */
-  /* top: 0; */
-  /* overflow-x: hidden; */
-  /* padding-top: 20px; */
 }
 
 /* Control the left side */
@@ -139,26 +82,9 @@ header {
 
 .text {
   background-color: #04aa6d;
-  color: white;
+  color: var(--bg-color);
   font-size: 16px;
   padding: 16px 32px;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-}
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
 }
 
 .footer-distributed {
@@ -320,7 +246,6 @@ section {
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
   .footer-distributed {
     font: bold 14px sans-serif;
@@ -401,9 +326,9 @@ footer a{
 .info-content-area p.highlight:before {
   position: absolute;
   content: "";
-  width: 15px;
-  height: 15px;
-  top: 5px;
+  width: 10px;
+  height: 10px;
+  top: 7px;
   left: 0;
   background: #2a365f;
 }
@@ -461,17 +386,29 @@ footer a{
 	z-index: 1; */
 }
 
-.contact-us-wrapper {
-  background: #fff;
-  /* position: relative; */
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
-}
-
 .contact-us-inner {
   text-align: center;
-  /* padding: 10px 30px; */
-  border-right: 1px solid #eee;
 }
+.contact-us-wrapper > div {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-us-wrapper > div > div {
+  width: auto;
+  /* border-right: 1px solid var(--brand-color); */
+}
+
+.contact-us-wrapper > div > div:last-child {
+  border-right: none;
+}
+
+
 
 .contact-us-inner:nth-last-child(4) {
   border-right: none;
@@ -666,24 +603,25 @@ font-size:medium;
   font-weight: bold;
   color: white;
   font-family: Arial, sans-serif;
-  background-color:#1577A0;
+  background-color: var(--brand-color);
+  border-radius: 10px;
   margin: 10px;
-  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   line-height: 30px;
   transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .grid-item:hover {
-  transform: scale(1.1);
-  background-color: #1577A0;
-  color: rgb(0, 0, 0);
+  transform: scale(1.02);
+  color: var(--brand-color);
+  background-color: #ddd;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.grid-item:nth-child(odd) {
-  background-color: #1577A0;
-  /* color: white; */
-}
 .centered-content {
   text-align: center;
   font-family: Arial, sans-serif; /* Center align the content */
@@ -695,7 +633,248 @@ font-size:medium;
   border: none;
   border-top: 3px solid #1577A0; /* Change the color and style of the separator line */
 }
-.container {
-  padding: 0 20px; /* Adjust the left and right padding as needed */
+
+/* Redesign Overwrite */
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+} 
+
+.navbar, .dropdown-menu {
+  background-color: #f3f3f3 !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.navbar-expand-lg .navbar-nav {
+  gap: 1em;
+}
+
+.navbar-collapse .navbar-nav {
+  padding: 1em 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--brand-color);
+  padding: 0;
+  font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: var(--brand-color-light);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-item .dropdown-menu {
+  flex-basis: 100%;
+}
+
+.navbar-expand-lg .nav-item i::before {
+  color: var(--brand-color);
+}
+
+.navbar-expand-lg .nav-item:hover i::before {
+  color: var(--brand-color-light);
+}
+
+.navbar-expand-lg .nav-item:hover i::before {
+  color: var(--brand-color-light);
+}
+
+.nav-link.show + i::before {
+  content: "\f0d8";
+  
+}
+
+.nav-item .dropdown-item {
+  color: var(--brand-color);
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+}
+
+a.navbar-brand img {
+  max-width: 200px;
+}
+
+@media (max-width: 1200px) {
+  a.navbar-brand img {
+    max-width: 150px;
+  }
+}
+
+/* Main */
+
+section.hero {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+  padding-bottom: 5em;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(68, 68, 68, 0.9),
+    rgba(5, 27, 49, 0.9)
+  ),
+  url("../assests/landing.jpeg");
+  margin-bottom: 30px;
+  color: var(--brand-accent);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  font-size: 4rem;
+  color: var(--bg-color);
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero h1 span {
+    font-size: 3rem;
+  }
+}
+
+.hero a {
+  color: var(--bg-color);
+  margin-top: 1em;
+  font-size: 2em;
+  transition: all .2s ease-in-out;
+}
+
+.hero a:hover {
+  color: var(--brand-color-light);
+  transform: translateY(5px);
+}
+
+.waves-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+.about-area {
+  padding: 2em;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.main {
+  padding: 1em 2em;
+}
+
+.info-content-area {
+  padding-right: 5em;
+}
+
+.info-content-area h2 {
+  color: var(--brand-color);
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+.info-img {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.info-content-area p.highlight {
+  padding-left: 25px;
+}
+
+.info-content-area p.highlight:before {
+  border-radius: 50px;
+}
+
+@media (max-width: 990px) {
+  .info-content-area {
+    padding-right: 0;
+  }
+}
+
+/* Centered content */
+
+.centered-content {
+  margin-top: 5em;
+}
+
+.centered-content h2 {
+  color: var(--brand-color);
+  font-weight: 700;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  margin-top: 5em;
+  padding: 2em;
+  background-color: #f3f3f3 !important;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-bottom: 100px;
+}
+
+footer .copyright {
+  background-color: var(--brand-color);
+  color: var(--bg-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
